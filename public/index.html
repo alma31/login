@@ -10,21 +10,21 @@
 
 	<div class="ui two column centered grid">
 		<div class="column">
-			<h1>Connexion</h1>			
+			<h1>Connexion</h1>
+		<form method="post" action="/login">		
 			<div class="ui input">
 				<label for="pseudo">Nom D'utilisateur</label>
-				<input id="pseudo" type="text" placeholder="Pseudo">
+				<input id="pseudo" type="text" name="username" placeholder="Pseudo">
 			</div>
 			<div class="ui input">
 				<label for="mdp">Mot de passe</label>
-				<input id="mdp" type="password" placeholder="mot de passe">
+				<input id="mdp" type="password" name="password" placeholder="mot de passe">
 			</div>
 			<button class="ui button">Connexion</button>
+		</form>
 		</div>
-
-
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="node_modules/semantic-ui/dist/semantic.min.js"></script>
-	</body>
+<!--         <script type="text/javascript" src="app.js"></script>
+ -->	</body>
 	</html>
